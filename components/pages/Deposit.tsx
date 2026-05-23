@@ -188,7 +188,7 @@ export default function Deposit({ navigate }: DepositProps) {
   const crypto = CRYPTOS[selectedIdx]
   const liveCoin = coins.find(c => c.id === crypto.coinId)
   const livePrice = liveCoin?.price ?? (
-    crypto.symbol === 'BTC' ? 103000 : crypto.symbol === 'ETH' ? 2200
+    crypto.symbol === 'BTC' ? 80000 : crypto.symbol === 'ETH' ? 2200
     : crypto.symbol === 'SOL' ? 133 : 1
   )
   const cryptoAmount = parseFloat(amount) || 0
