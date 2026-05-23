@@ -101,7 +101,7 @@ export default function KYC({ navigate }: KYCProps) {
       localStorage.setItem('kyc_document_type', documentType)
       alert("✅ KYC Completed Successfully!")
       navigate('dashboard')
-    }, 1500)
+    }, 7000)
   }
 
   const canProceedToStep2 = country !== ''
